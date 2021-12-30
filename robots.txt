@@ -1,0 +1,2 @@
+User-agent: *
+Disallow: package.json .gitignore src/ yarn.lock

@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  },
+  "scripts": {
+    "sass": "node-sass --watch -o dist src/assets"
+  }
+}
