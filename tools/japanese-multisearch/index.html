@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>日本語 MultiSearch! :)</h1>
+  <div>ps: remember to enable popups</div>
+  <hr>
+  <form action="">
+    <input type="text" id="word">
+    <button type="submit" id="search">Search</button>
+    
+    <hr>
+    <div id="options">
+    <strong>Search on</strong>
+    <ul>
+      
+      <li>
+        <input type="checkbox" name="forvo" id="forvo">
+        <label for="forvo" id="forvo">Forvo</label>
+      </li>
+      <li>
+        <input type="checkbox" name="jisho" id="jisho">
+        <label for="jisho" id="jisho">Jisho</label>
+      </li>
+      <li>
+        <input type="checkbox" name="images" id="images">
+        <label for="images" id="images">Images</label>
+      </li>
+    </ul>
+  </div>
+   
+
+  </form>
+
+  <script>
+    window.addEventListener('load', () => {
+
+    const input = document.getElementById('word')
+
+    const openTabs = (e) => {
+      window.open(`https://forvo.com/word/${input.value}/#ja`, '1', []);
+      window.open(`https://jisho.org/search/${input.value}`, '2', []);
+      window.open(`https://br.images.search.yahoo.com/search/images;_ylt=AwrhVLL4fnln7AEA6i7z6Qt.;_ylu=Y29sbwNiZjEEcG9zAzEEdnRpZAMEc2VjA3BpdnM-?p=${input.value}`, '3', []);
+
+      input.value = '';
+    }
+
+    document.getElementById('search').addEventListener('click', openTabs);
+
+  });
+
+  </script>
+</body>
+</html>
