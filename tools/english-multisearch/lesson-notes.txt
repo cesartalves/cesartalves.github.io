@@ -1,0 +1,7 @@
+Interpolation: putting a value in between a String
+- Modern Javascript: `string${value}`
+- PHP = "$value"
+' " => ' '  => can't Interpolate values
+
+EventListener => Add a Function to be called when a certain Event on one of the Elements
+of the Page happen!
