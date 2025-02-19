@@ -30,15 +30,15 @@
     <ul>
       
       <li>
-        <input type="checkbox" name="forvo" id="forvo">
+        <input type="checkbox" name="forvo" id="forvo" checked>
         <label for="forvo" id="forvo">Forvo (Audio)</label>
       </li>
       <li>
-        <input type="checkbox" name="dictionary" id="dictionary">
+        <input type="checkbox" name="dictionary" id="dictionary" checked>
         <label for="dictionary" id="dictionary">Dictionary</label>
       </li>
       <li>
-        <input type="checkbox" name="images" id="images">
+        <input type="checkbox" name="images" id="images" checked>
         <label for="images" id="images">Images</label>
       </li>
     </ul>
@@ -58,14 +58,20 @@
 
         const audioCheckbox = document.getElementById('forvo');
         const dictionaryCheckbox = document.getElementById('dictionary')
+        const imagesCheckbox = document.getElementById('images')
         
         if (audioCheckbox.checked) {
          window.open(`https://forvo.com/word/${input.value}/#ja`, '1', []);
         }
+        
 
-        window.open(`https://dictionary.cambridge.org/dictionary/english-portuguese/${input.value}`, '2', []);
+        if (dictionaryCheckbox.checked)
+          window.open(`https://dictionary.cambridge.org/dictionary/english-portuguese/${input.value}`, '2', []);
+        
 
-        window.open(`https://br.images.search.yahoo.com/search/images;_ylt=AwrhVLL4fnln7AEA6i7z6Qt.;_ylu=Y29sbwNiZjEEcG9zAzEEdnRpZAMEc2VjA3BpdnM-?p=${input.value}`, '3', []);
+        if (imagesCheckbox.checked) 
+          window.open(`https://br.images.search.yahoo.com/search/images;_ylt=AwrhVLL4fnln7AEA6i7z6Qt.;_ylu=Y29sbwNiZjEEcG9zAzEEdnRpZAMEc2VjA3BpdnM-?p=${input.value}`, '3', []);
+        
 
         input.value = '';
       }
