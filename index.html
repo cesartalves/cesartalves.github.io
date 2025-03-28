@@ -83,15 +83,27 @@
     
   </style>
 
-   <!-- Google tag (gtag.js) -->
-   <script async src="https://www.googletagmanager.com/gtag/js?id=G-26RV4N2RJX"></script>
-   <script>
-     window.dataLayer = window.dataLayer || [];
-     function gtag(){dataLayer.push(arguments);}
-     gtag('js', new Date());
- 
-     gtag('config', 'G-26RV4N2RJX');
-   </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-26RV4N2RJX"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-26RV4N2RJX');
+
+    document.addEventListener("DOMContentLoaded", function() {
+      document.body.addEventListener("click", function(event) {
+        let link = event.target.closest("a");
+        if (link && link.hostname !== location.hostname) {
+          gtag('event', 'click', {
+            'event_category': 'Outbound Link',
+            'event_label': link.href
+          });
+        }
+      });
+    });
+  </script>
  
 </head>
 <body>
