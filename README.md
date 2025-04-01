@@ -1,4 +1,4 @@
-# Github Pages Sample!
+# Website on Github Pages! Thank you, Github <3
 
 This is a sample page to demonstrate basic *Software Engineering Techniques* to *Students / Mentees of mine*
 
