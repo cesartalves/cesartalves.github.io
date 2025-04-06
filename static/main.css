@@ -1,0 +1,70 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbar-container li {
+  display: none;
+  color: white;
+}
+
+.navbar-container li.active {
+  display: block;
+}
+
+.intro-thanks {
+  margin: 0px 10px 0px 10px;
+  border-radius: 10px;
+  background-color: rgb(213, 240, 241);
+  padding: 20px;
+}
+
+.thanks {
+  font-weight: bold;
+}
+
+.center-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.video {
+  font-size: 30px;
+}
+
+.video-container {
+  background-color: rgb(213, 240, 241);
+  margin: 30px 0px 30px 0px;
+  padding: 20px;
+}
+
+#nav {
+  background-color: black;
+  height: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+#nav a {
+  color: white;
+  text-decoration: none;
+}
+
+#external {
+  margin: 20px 0px 30px 0px;
+  padding: 30px 0px 30px 0px;
+  border-radius: 5px;
+  background-color: beige;
+}
+
+#external > p {
+  padding-bottom: 20px;
+  font-weight: bolder;
+}
+
+#footer {
+  margin-bottom: 20px;
+  padding: 20px;
+}
