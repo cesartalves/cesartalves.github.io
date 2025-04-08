@@ -10,17 +10,5 @@ _Constant In-Progress. For my Official Pages, check:_
 
 - Instagram: _cesartalvez_ / *cesartalvezheart*
 - X / Tiktok / Reddit / LinkedIn: cesartalves
-- YT Channels: [cesartalvez](https://youtube.com/@cesartalves) | [cesartalvez-english](https://youtube.com/@cesartalvez-english) | [cesartalvez-software-engineering](https://youtube.com/@cesartalvez-software-dev)
+- YT Channels: [cesartalvez](https://youtube.com/@cesartalves) | [cesartalvez-learning](https://youtube.com/@cesartalvez-learning) | [software-mentoring](https://youtube.com/@software-mentoring)
 
-## Basic Instructions to create your own Page!
-
-- create a @yourhandle.github.io project
-- got to "Settings", "Pages", and activate Github Pages. Select "branch", then "main"
-- create an `index.html` file with your content. You can use the code here as a sample
-- then git commands
-```git
-git add .
-git commit -m "Creating Github Pages"
-git push
-```
-- go to "`yourpage`.github.io!"

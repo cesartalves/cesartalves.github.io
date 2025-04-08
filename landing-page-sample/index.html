@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cesartalvez! Software Engineering, Languages and Everything in between!</title>
+
+  <link rel="stylesheet" href="static/main.css">  
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-26RV4N2RJX"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-26RV4N2RJX');
+
+    document.addEventListener("DOMContentLoaded", function() {
+      document.body.addEventListener("click", function(event) {
+        console.log('Tracked')
+        let link = event.target.closest("a");
+        if (link && link.hostname !== location.hostname) {
+          gtag('event', 'click', {
+            'event_category': 'Outbound Link',
+            'event_label': link.href
+          });
+        }
+      });
+    });
+  </script>
+ 
+</head>
+<body>
+  <section id="nav" class="center-content">
+    <a href="">cesartalvez | Sample LandingPage ✨</a>
+
+
+    <div class="navbar-container">
+      <ul>
+        <li class="active">Videos</li>
+        <li class="active">Social Media</li>
+      </ul>
+    </div>
+
+  </section>
+  <section id="intro" class="center-content">
+    <div>
+      <div class="intro-thanks">
+        <div class="">
+          Hi! This is a sample Landing Page. 
+        </div>
+        <div class="thanks">
+          Thanks for vising! ☺️
+        </div>
+      <hr>
+        <br>I use this Page to <strong>Teach people I am Mentoring!</strong>
+      </div>
+    
+        <div class="video-container">
+          <p><strong>Need help with Programming? See the links below! Click on the Link below! 👇</strong>
+
+          </p>
+          <ul>
+            <li>
+              <a class="video" href="https://youtu.be/cNgc_ra75oY" target="_blank">Landing Page Help! Git, Github Pages, Basic HTML, Flexbox :)</a>
+            </li>
+            <li> 
+              <a class="video" href="https://youtu.be/uNEnYoceGyE" target="_blank">What is DRY? (Portuguese)</a>
+            </li>
+          </ul>
+          
+        </div>
+    </div>
+  </section>
+
+  <section id="external">
+    <p class="center-content">Find me on Social Media! 🧑🏻‍💻</p>
+    <div class="center-content">
+      <div class="external">
+        <div class="linkedin-badge">
+          <div class="badge-base LI-profile-badge" data-locale="pt_BR" data-size="medium" data-theme="dark"
+            data-type="VERTICAL" data-vanity="cesartalves" data-version="v1">
+            <a class="badge-base__link LI-simple-link"
+              href="https://br.linkedin.com/in/cesartalves?trk=profile-badge"></a>
+          </div>
+        </div>
+
+        <div class="stackoveflow-badge">
+          <a href="https://stackoverflow.com/users/9744136/cesartalves">
+            <img src="https://stackoverflow.com/users/flair/9744136.png?theme=dark" width="208" height="58"
+              alt="profile for cesartalves at Stack Overflow, Q&amp;A for professional and enthusiast programmers"
+              title="profile for cesartalves at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="footer">
+    Programmed with ❤️ by <a href="https://linktr.ee/cesartalvez" target="_blank">@cesartalvez!</a>
+  </section>
+
+  <script>
+    document.getElementById('#navbar-container').addEventListener('click', ()=> {
+      
+      navbarItem.classList.toggle('active');
+    })
+
+  </script>
+
+  <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+</body>
+</html>

@@ -1,115 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
- 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>cesartalvez! Software Engineering, Languages and Everything in between!</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>César Alves | cesartalvez</title>
+  <link rel="stylesheet" href="style.css" />
 
-  <link rel="stylesheet" href="static/main.css">  
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-26RV4N2RJX"></script>
-  <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-26RV4N2RJX');
-
-    document.addEventListener("DOMContentLoaded", function() {
-      document.body.addEventListener("click", function(event) {
-        console.log('Tracked')
-        let link = event.target.closest("a");
-        if (link && link.hostname !== location.hostname) {
-          gtag('event', 'click', {
-            'event_category': 'Outbound Link',
-            'event_label': link.href
-          });
-        }
-      });
-    });
-  </script>
- 
 </head>
 <body>
-  <section id="nav" class="center-content">
-    <a href="">cesartalvez | Sample LandingPage ✨</a>
-
-
-    <div class="navbar-container">
-      <ul>
-        <li class="active">Videos</li>
-        <li class="active">Social Media</li>
-      </ul>
-    </div>
-
-  </section>
-  <section id="intro" class="center-content">
-    <div>
-      <div class="intro-thanks">
-        <div class="">
-          Hi! This is a sample Landing Page. 
-        </div>
-        <div class="thanks">
-          Thanks for vising! ☺️
-        </div>
-      <hr>
-        <br>I use this Page to <strong>Teach people I am Mentoring!</strong>
-      </div>
+  <div class="main">
     
-        <div class="video-container">
-          <p><strong>Need help with Programming? See the links below! Click on the Link below! 👇</strong>
+    <div class="container">
+      <div class="introduction">
+        <img src="https://avatars.githubusercontent.com/u/14350934?v=4" alt="cesartalvez" class="avatar" />
+        <h1>@cesartalvez</h1>
+        <p class="bio">Escrevo, Ensino e exploro ideias sobre Linguagens, Arte e Tecnologia 🖤</p>
+      </div>
 
-          </p>
-          <ul>
-            <li>
-              <a class="video" href="https://youtu.be/cNgc_ra75oY" target="_blank">Landing Page Help! Git, Github Pages, Basic HTML, Flexbox :)</a>
-            </li>
-            <li> 
-              <a class="video" href="https://youtu.be/uNEnYoceGyE" target="_blank">What is DRY? (Portuguese)</a>
-            </li>
-          </ul>
-          
-        </div>
-    </div>
-  </section>
-
-  <section id="external">
-    <p class="center-content">Find me on Social Media! 🧑🏻‍💻</p>
-    <div class="center-content">
-      <div class="external">
-        <div class="linkedin-badge">
-          <div class="badge-base LI-profile-badge" data-locale="pt_BR" data-size="medium" data-theme="dark"
-            data-type="VERTICAL" data-vanity="cesartalves" data-version="v1">
-            <a class="badge-base__link LI-simple-link"
-              href="https://br.linkedin.com/in/cesartalves?trk=profile-badge"></a>
+      <div class="social-media">
+        <a title="YouTube" target="_blank" rel="noopener noreferrer" href="https://youtube.com/@cesartalvez-learning?si=p1Yp8Y4t31Req2s9" aria-label="YouTube"
+          style="display: inline-block; transition: transform 0.2s ease-in-out; color: #333;"
+          onmouseenter="this.style.transform='scale(1.1)'" 
+          onmouseleave="this.style.transform='scale(1)'">
+          <svg width="30" height="30" viewBox="0 0 576 512" fill="#333" xmlns="http://www.w3.org/2000/svg">
+            <path d="M549.7 124.1c-6.3-23.8-24.9-42.4-48.6-48.6C456.5 64 288 64 288 64S119.5 64 74.9 75.5C51.1 81.7 32.5 100.3 26.3 124.1 16 168.7 16 256 16 256s0 87.3 10.3 131.9c6.3 23.8 24.9 42.4 48.6 48.6C119.5 448 288 448 288 448s168.5 0 213.1-11.5c23.8-6.3 42.4-24.9 48.6-48.6C560 343.3 560 256 560 256s0-87.3-10.3-131.9zM232 336V176l142 80-142 80z"/>
+          </svg>
+        </a>
+      
+        <a title="Instagram" target="_blank" rel="noopener noreferrer" href="https://instagram.com/teacher.cesartalvez" aria-label="Instagram"
+          style="display: inline-block; transition: transform 0.2s ease-in-out; color: #333;"
+          onmouseenter="this.style.transform='scale(1.1)'" 
+          onmouseleave="this.style.transform='scale(1)'">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="#333" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3h10zm-5 3c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4-1.794-4-4-4zm0 6.5c-1.379 0-2.5-1.121-2.5-2.5S10.621 8.5 12 8.5s2.5 1.121 2.5 2.5S13.379 13.5 12 13.5zm4.5-6.75c.414 0 .75.336.75.75s-.336.75-.75.75-.75-.336-.75-.75.336-.75.75-.75z"/>
+          </svg>
+        </a>
+      
+        <a title="LinkedIn" target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/cesartalves" aria-label="LinkedIn"
+          style="display: inline-block; transition: transform 0.2s ease-in-out; color: #333;"
+          onmouseenter="this.style.transform='scale(1.1)'" 
+          onmouseleave="this.style.transform='scale(1)'">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="#333" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4V8zm7 0h3.8v2.16h.05c.53-1 1.82-2.16 3.75-2.16C20.14 8 21 10.27 21 13.43V24h-4v-9.43c0-2.25-.04-5.14-3.13-5.14-3.14 0-3.62 2.45-3.62 4.99V24h-4V8z"/>
+          </svg>
+        </a>
+      
+        <a title="GitHub" target="_blank" rel="noopener noreferrer" href="https://github.com/cesartalves" aria-label="GitHub"
+          style="display: inline-block; transition: transform 0.2s ease-in-out; color: #333;"
+          onmouseenter="this.style.transform='scale(1.1)'" 
+          onmouseleave="this.style.transform='scale(1)'">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="#333" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.1 3.29 9.42 7.86 10.96.58.11.79-.25.79-.56v-2.06c-3.2.7-3.87-1.54-3.87-1.54-.53-1.36-1.29-1.72-1.29-1.72-1.05-.72.08-.71.08-.71 1.16.08 1.78 1.19 1.78 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.45.11-3.02 0 0 .97-.31 3.17 1.18a10.92 10.92 0 0 1 5.77 0c2.2-1.5 3.17-1.18 3.17-1.18.63 1.57.23 2.73.11 3.02.74.8 1.19 1.83 1.19 3.09 0 4.43-2.7 5.41-5.28 5.7.41.36.77 1.07.77 2.15v3.18c0 .31.21.67.8.56A10.53 10.53 0 0 0 23.5 12C23.5 5.74 18.27.5 12 .5z"/>
+          </svg>
+        </a> 
+      </div>
+      
+      <div class="card-grid">
+        <a class="card" href="https://www.youtube.com/@cesartalvez-learning" target="_blank">
+          <img src="https://img.youtube.com/vi/2Z4m4lnjxkY/mqdefault.jpg" alt="YouTube" />
+          <div class="card-content">
+            <h2>Aulas e Mentorias para Brasileiros 🇧🇷</h2>
+            <p>
+              <strong>
+                <span>Inglês, Preparação para Entrevistas, Aconselhamento de Carreira</span></strong>
+              </p>
           </div>
-        </div>
+        </a>
 
-        <div class="stackoveflow-badge">
-          <a href="https://stackoverflow.com/users/9744136/cesartalves">
-            <img src="https://stackoverflow.com/users/flair/9744136.png?theme=dark" width="208" height="58"
-              alt="profile for cesartalves at Stack Overflow, Q&amp;A for professional and enthusiast programmers"
-              title="profile for cesartalves at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
-          </a>
-        </div>
+        <a class="card" href="https://www.youtube.com/@cesartalvez-learning" target="_blank">
+          <img src="https://img.youtube.com/vi/2Z4m4lnjxkY/mqdefault.jpg" alt="YouTube" />
+          <div class="card-content">
+            <h2>Private Lessons and Mentorship - International 🌎</h2>
+            <p>
+              <strong>
+               
+                Programming? Interview Preparation? Counseling?
+              </strong>
+             
+            </p>
+            <br>
+            <span>I will teach you <strong>anything</strong> I know!</span>
+          </div>
+        </a>
+      
+        <!-- <a class="card" href="https://patreon.com/cesartalvez" target="_blank">
+          <img src="https://c5.patreon.com/external/logo/downloads_logomark_color_on_coral.png" alt="Patreon" />
+          <div class="card-content">
+            <h2>Patreon</h2>
+            <p>Me apoie e receba Conteúdos exclusivos, Aulas e spoilers!</p>
+          </div>
+        </a> -->
+
+        <a class="card-with-text" href="https://cesartalvezlearning.com" target="_blank">
+          <img src="https://ugc.production.linktr.ee/1e6c7e74-8551-41dc-b52d-887bf12e7976_cropped-85fda88d-b8e8-43ea-95bb-48def7ba279d.jpeg?io=true&size=thumbnail-stack-v1_0" alt="Kurapika" />
+          <div class="card-text">
+            <h3>cesartalvez Learning</h3>
+            <p>Learning Anything | Languages, Meta-Learning, Instruments and MORE?!  </p>
+          </div>
+        </a>
+
+        <a class="card-with-text" href="https://patreon.com/cesartalvez">
+          <img src="https://ugc.production.linktr.ee/72dce281-3cdc-4e28-a98b-7c60000f8a0b_captain-kurapika.jpeg?io=true&size=thumbnail-feature-v1_0" alt="Kurapika" />
+          <div class="card-text">
+            <h3>cesartalvez' Angel's Psychedelia</h3>
+            <p>Tales, Articles, Art | Psychology, Love, Spirituality 🌙 </p>
+          </div>
+        </a>
+        
       </div>
     </div>
-  </section>
-
-  <section id="footer">
-    Programmed with ❤️ by <a href="https://linktr.ee/cesartalvez" target="_blank">@cesartalvez!</a>
-  </section>
-
-  <script>
-    document.getElementById('#navbar-container').addEventListener('click', ()=> {
-      
-      navbarItem.classList.toggle('active');
-    })
-
-  </script>
-
-  <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+    </div>
+    <div class="footer">
+      <p>🤖 &nbsp;Generated with AI, obviously.</p>
+    </div>
+  </div>
+  
 </body>
+<script>
+  const avatar = document.querySelector('.avatar');
+
+  avatar.addEventListener('mouseenter', () => {
+    avatar.classList.add('spin');
+
+    // Remove class after animation ends so it can trigger again next time
+    avatar.addEventListener('animationend', () => {
+      avatar.classList.remove('spin');
+    }, { once: true });
+  });
+</script>
 </html>
