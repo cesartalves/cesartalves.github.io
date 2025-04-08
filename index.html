@@ -6,6 +6,44 @@
   <title>César Alves | cesartalvez</title>
   <link rel="stylesheet" href="style.css" />
 
+   <!-- Google tag (gtag.js) -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-26RV4N2RJX"></script>
+   <script>
+       window.dataLayer = window.dataLayer || [];
+       function gtag(){dataLayer.push(arguments);}
+       gtag('js', new Date());
+ 
+       gtag('config', 'G-26RV4N2RJX');
+ 
+     document.addEventListener("DOMContentLoaded", function() {
+       document.body.addEventListener("click", function(event) {
+         console.log('Tracked')
+         let link = event.target.closest("a");
+         if (link && link.hostname !== location.hostname) {
+           gtag('event', 'click', {
+             'event_category': 'Outbound Link',
+             'event_label': link.href
+           });
+         }
+       });
+     });
+   </script>
+
+  <link rel="icon" type="image/png" href="images/t.png"/>
+
+  <meta name="description" content="Where cesartalvez shares all the projects he works on. Yes, they are many, and he would probably be dead without Meditation.">
+  <meta name="keywords" content="Meditation, Self-Help, Psychology, Languages, Meta-Learning, Jung, mentoring, counseling, career, love">
+  <meta name="author" content="César Alves">
+  <meta property="og:title" content="César Alves | cesartalvez">
+  <meta property="og:description" content="Where cesartalvez shares all the projects he works on. Yes, they are many, and he would probably be dead without Meditation.">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/14350934?v=4">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cesartalvez.com">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="César Alves | cesartalvez">
+  <meta name="twitter:description" content="Where cesartalvez shares all the projects he works on. Yes, they are many, and he would probably be dead without Meditation.">
+  <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/14350934?v=4">
+
 </head>
 <body>
   <div class="main">
@@ -14,7 +52,15 @@
       <div class="introduction">
         <img src="https://avatars.githubusercontent.com/u/14350934?v=4" alt="cesartalvez" class="avatar" />
         <h1>@cesartalvez</h1>
-        <p class="bio">Escrevo, Ensino e exploro ideias sobre Linguagens, Arte e Tecnologia 🖤</p>
+
+        <div class="language-switch">
+          <button class="lang-btn" data-lang="pt">🇧🇷</button>
+          <button class="lang-btn" data-lang="en">🌍</button>
+        </div>
+        <p class="bio pt">Escrevo, Ensino e exploro ideias sobre Linguagens, Arte e Tecnologia 🖤</p>
+        <p class="bio en">Writer, Teacher, Explorer - Languages, Art and Technology 🖤</p>
+
+        
       </div>
 
       <div class="social-media">
@@ -54,35 +100,53 @@
           </svg>
         </a> 
       </div>
+
+     
+     
       
       <div class="card-grid">
-        <a class="card" href="https://www.youtube.com/@cesartalvez-learning" target="_blank">
-          <img src="https://img.youtube.com/vi/2Z4m4lnjxkY/mqdefault.jpg" alt="YouTube" />
+
+        <a class="card pt"  href="images/image (36).png" target="_blank">
+          <img src="images/image (36).png" alt="YouTube" />
           <div class="card-content">
             <h2>Aulas e Mentorias para Brasileiros 🇧🇷</h2>
             <p>
               <strong>
-                <span>Inglês, Preparação para Entrevistas, Aconselhamento de Carreira</span></strong>
+                <span>Inglês, Preparação para Entrevistas, Aconselhamento de Carreira & Vida</span></strong>
               </p>
           </div>
         </a>
-
-        <a class="card" href="https://www.youtube.com/@cesartalvez-learning" target="_blank">
-          <img src="https://img.youtube.com/vi/2Z4m4lnjxkY/mqdefault.jpg" alt="YouTube" />
+  
+        <a class="card en" href="https://www.youtube.com/@cesartalvez-learning" target="_blank">
+          <img src="images/image (36).png" alt="YouTube" />
           <div class="card-content">
-            <h2>Private Lessons and Mentorship - International 🌎</h2>
+            <h2>🌎 Private Lessons and Mentorship</h2>
             <p>
               <strong>
                
-                Programming? Interview Preparation? Counseling?
+                Programming? Interview Preparation? Counseling? 
               </strong>
              
             </p>
             <br>
-            <span>I will teach you <strong>anything</strong> I know!</span>
+            <span>I will teach you <strong>anything</strong> I know!</span> 
           </div>
         </a>
-      
+  
+        <a class="card-with-text" href="https://cesartalvezlearning.com" target="_blank">
+          <img src="https://ugc.production.linktr.ee/1e6c7e74-8551-41dc-b52d-887bf12e7976_cropped-85fda88d-b8e8-43ea-95bb-48def7ba279d.jpeg?io=true&size=thumbnail-stack-v1_0" alt="Kurapika" />
+          <div class="card-text en">
+            <h3>cesartalvez Learning</h3>
+            <p>Learning Anything | Languages, Meta-Learning, Instruments and MORE?!  </p>
+          </div>
+          <div class="card-text pt">
+            <h3>cesartalvez Learning</h3>
+            <p> <strong>Aprenda à Aprender </strong>
+              <br>
+              Meta-Aprendizagem, Idiomas, Instrumentos e muito Mais?!  </p>
+          </div>
+        </a>
+
         <!-- <a class="card" href="https://patreon.com/cesartalvez" target="_blank">
           <img src="https://c5.patreon.com/external/logo/downloads_logomark_color_on_coral.png" alt="Patreon" />
           <div class="card-content">
@@ -91,19 +155,15 @@
           </div>
         </a> -->
 
-        <a class="card-with-text" href="https://cesartalvezlearning.com" target="_blank">
-          <img src="https://ugc.production.linktr.ee/1e6c7e74-8551-41dc-b52d-887bf12e7976_cropped-85fda88d-b8e8-43ea-95bb-48def7ba279d.jpeg?io=true&size=thumbnail-stack-v1_0" alt="Kurapika" />
-          <div class="card-text">
-            <h3>cesartalvez Learning</h3>
-            <p>Learning Anything | Languages, Meta-Learning, Instruments and MORE?!  </p>
-          </div>
-        </a>
-
         <a class="card-with-text" href="https://patreon.com/cesartalvez">
           <img src="https://ugc.production.linktr.ee/72dce281-3cdc-4e28-a98b-7c60000f8a0b_captain-kurapika.jpeg?io=true&size=thumbnail-feature-v1_0" alt="Kurapika" />
-          <div class="card-text">
+          <div class="card-text en">
             <h3>cesartalvez' Angel's Psychedelia</h3>
             <p>Tales, Articles, Art | Psychology, Love, Spirituality 🌙 </p>
+          </div>
+          <div class="card-text pt">
+            <h3>Contos de cesartalvez: A Psicodelia dos Anjos</h3>
+            <p>Histórias, Artigos, Arte | Psicologia, Amor, Espiritualidade 🌙 </p>
           </div>
         </a>
         
@@ -118,14 +178,92 @@
 </body>
 <script>
   const avatar = document.querySelector('.avatar');
+const originalSrc = avatar.src;
+const spinSrc = "images/t.png"; // Replace with your desired spin image
 
-  avatar.addEventListener('mouseenter', () => {
-    avatar.classList.add('spin');
+avatar.addEventListener('mouseenter', () => {
+  avatar.classList.add('spin-y');
+  avatar.classList.add('fade-out');
 
-    // Remove class after animation ends so it can trigger again next time
-    avatar.addEventListener('animationend', () => {
-      avatar.classList.remove('spin');
-    }, { once: true });
+  avatar.addEventListener('transitionend', () => {
+    avatar.src = spinSrc;
+    avatar.classList.remove('fade-out');
+    avatar.classList.add('fade-in');
+  }, { once: true });
+
+  avatar.addEventListener('animationend', () => {
+    avatar.classList.remove('spin-y');
+    avatar.classList.remove('fade-in');
+
+    setTimeout(() => {
+      avatar.classList.add('fade-out');
+      avatar.addEventListener('transitionend', () => {
+        avatar.src = originalSrc;
+        avatar.classList.remove('fade-out');
+        avatar.classList.add('fade-in');
+      }, { once: true });
+    }, 100);
+  }, { once: true });
+});
+
+
+</script>
+
+<script>
+  const langButtons = document.querySelectorAll('.lang-btn');
+  const ptContent = document.querySelectorAll('.pt');
+  const enContent = document.querySelectorAll('.en');
+
+  function switchLanguage(lang) {
+    document.body.classList.add('fade');
+    localStorage.setItem('preferredLang', lang);
+
+    
+
+    const showClass = lang === 'pt' ? ptContent : enContent;
+    const hideClass = lang === 'pt' ? enContent : ptContent;
+
+    hideClass.forEach(el => {
+      el.classList.remove('active');
+    });
+
+    langButtons.forEach(btn => {
+    if (btn.dataset.lang === lang) {
+      btn.classList.add('active');
+    } else {
+      btn.classList.remove('active');
+    }
+  });
+
+    setTimeout(() => {
+      showClass.forEach(el => {
+        el.classList.add('active');
+      });
+
+      document.body.classList.remove('fade');
+    }, 500);
+
+
+ 
+    
+  }
+
+  langButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const lang = button.dataset.lang;
+      switchLanguage(lang);
+    });
+
+    
+  });
+
+  window.addEventListener('DOMContentLoaded', () => {
+    const storedLang = localStorage.getItem('preferredLang');
+    const browserLang = navigator.language.startsWith('pt') ? 'pt' : 'en';
+    const initialLang = storedLang || browserLang;
+
+    switchLanguage(initialLang);
   });
 </script>
+
 </html>
