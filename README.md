@@ -1,14 +1,27 @@
-# Website on Github Pages! Thank you, Github <3
+# One website to rule them all
 
-This is a sample page to demonstrate basic *Software Engineering Techniques* to *Students / Mentees of mine*
+## [cesartalvez.com](https://cesartalvez.com)
 
-Shoutout to Fernanda, my very first Intern for ["Angel's Psychedelia"](https://patreon.com/cesartalvez)!
+Because linktree was simply not doing the job anymore (according to the Digital Marketing fellas)
 
-See this [Live!](https://cesartalves.github.io)
+Decided to get my hands dirty and do a website from scratch. No frameworks, no hassle, no anything.
 
-_Constant In-Progress. For my Official Pages, check:_
+## Did you Design this website yourself?
 
-- Instagram: _cesartalvez_ / *cesartalvezheart*
-- X / Tiktok / Reddit / LinkedIn: cesartalves
-- YT Channels: [cesartalvez](https://youtube.com/@cesartalves) | [cesartalvez-learning](https://youtube.com/@cesartalvez-learning) | [software-mentoring](https://youtube.com/@software-mentoring)
+Partially. I used a lot of AI, although I wrote some parts from scratch and, obviously, had to edit a lot of stuff by hand.
 
+## Can I use this template?
+
+Of course! Just pretend this is your homework from school and hm, don't make it too obvious that you copied it ;)
+
+## Can you teach me how to Program?
+
+Yeah. See "Lessons on the Website
+
+## Can you teach me English, Japanese, Portuguese?
+
+Probably. See "Lessons" on the Website
+
+## Can you teach me X, Y, Z?
+
+If you're asking this, you probably have stalked me enough to think I am pretty decent at that, so yeah! :)

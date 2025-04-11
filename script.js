@@ -82,3 +82,19 @@ const langButtons = document.querySelectorAll('.lang-btn');
     switchLanguage(initialLang);
     Animate();
   });
+
+  const backToTopButton = document.getElementById('jung');
+
+  // Show button after scrolling down
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 700) {
+      backToTopButton.classList.add('alive');
+    } else {
+      backToTopButton.classList.remove('alive');
+    }
+  });
+  
+  // Smooth scroll to top on click
+  backToTopButton.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
