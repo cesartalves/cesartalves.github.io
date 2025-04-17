@@ -98,3 +98,27 @@ const langButtons = document.querySelectorAll('.lang-btn');
   backToTopButton.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
+
+
+  window.addEventListener('load', () => {
+    // Wait a bit for LINE script to inject the iframe
+    const tryFixLINEButton = () => {
+      const iframe = document.querySelector('iframe[src*="line.me"]');
+      
+      if (iframe) {
+
+        const wrapper = document.createElement('div')
+        wrapper.innerHTML = iframe;
+        iframe.style.width = '100%';
+        iframe.style.height = '50px'; // Or whatever height works for you
+       
+        iframe.removeAttribute('width');
+        iframe.removeAttribute('height');
+      } else {
+        // Retry after a short delay if not found yet
+        setTimeout(tryFixLINEButton, 300);
+      }
+    };
+
+    tryFixLINEButton();
+  });

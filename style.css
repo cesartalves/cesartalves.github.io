@@ -419,3 +419,10 @@ button, a {
   opacity: 1;
   pointer-events: auto;
 }
+
+#line-wrapper {
+  display: flex;
+  max-width: 80px; 
+  align-self: center;
+  justify-self: center;
+}
