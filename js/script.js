@@ -83,23 +83,6 @@ const langButtons = document.querySelectorAll('.lang-btn');
     Animate();
   });
 
-  const backToTopButton = document.getElementById('jung');
-
-  // Show button after scrolling down
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 700) {
-      backToTopButton.classList.add('alive');
-    } else {
-      backToTopButton.classList.remove('alive');
-    }
-  });
-  
-  // Smooth scroll to top on click
-  backToTopButton.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
-
-
   window.addEventListener('load', () => {
     // Wait a bit for LINE script to inject the iframe
     const tryFixLINEButton = () => {

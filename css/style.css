@@ -111,7 +111,10 @@ body:not(.fade) {
   opacity: 1;
 }
 
-
+.main-title a {
+  text-decoration: none;
+  color: #333;
+}
 
 .avatar {
   width: 120px;
@@ -425,4 +428,18 @@ button, a {
   max-width: 80px; 
   align-self: center;
   justify-self: center;
+}
+
+#articles {
+  margin-top: 40px;
+  text-align: left;
+}
+
+.intro-text {
+  color: inherit;
+  text-decoration: none;
+}
+
+.intro-text:visited {
+  color: inherit;
 }
