@@ -443,3 +443,17 @@ button, a {
 .intro-text:visited {
   color: inherit;
 }
+
+.cta {
+  background-color: #25D366;
+  border-radius: 25px;
+  color: white;
+  width: 250px;
+  height: 50px;
+  display: inline-block; /* or block */
+  line-height: 50px;      /* vertically center text */
+  text-align: center;     /* horizontally center text */
+  font-size: 18px;
+  text-decoration: none;
+  padding: 10px;
+}
