@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "Ato Extraordinário"
-date: 2026-07-03 10:00:00 -0300
+date: 2026-09-03 10:00:00 -0300
 permalink: /ato-extraordinário/
 categories: mediunidade
 author: César Alves
